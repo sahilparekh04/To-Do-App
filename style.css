@@ -1,0 +1,223 @@
+:root {
+  --primary-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 26, 255, 0.76);
+}
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.container-top {
+  width: 80%;
+  margin: 20px;
+  padding: 20px 0;
+}
+.input-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-value {
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  border: 3px solid blue;
+}
+input:focus {
+  outline: none;
+}
+.nav-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+  padding: 15px 0;
+}
+.btn-clear {
+  border: none;
+  width: 90px;
+  height: 50px;
+  border: 3px solid #000;
+  color: #000;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-clear:hover {
+  background-color: rgba(0, 26, 255, 0.76);
+  color: #fff;
+  border: none;
+}
+.container-bottom {
+  border-top: 1px solid rgba(128, 128, 128, 0.76);
+  height: 100%;
+  width: 80%;
+ padding: 30px 0;
+  display: flex;
+  overflow-y: auto;
+}
+#default {
+  font-size: 1.1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+li {
+  display: flex;
+  gap: 0 10px;
+  cursor: pointer;
+}
+.js-list {
+  font-size: 1.1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 5px 0;
+}
+.text-elements {
+  margin: 0 10px;
+}
+.underline {
+  text-decoration: line-through;
+}
+.load {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+.select-box {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .task-value {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    padding: 0 10px;
+    border: 2px solid blue;
+  }
+  .btn-clear {
+    width: 60px;
+    height: 30px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.6rem;
+  }
+  #default {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .task-value {
+    width: 75%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border: 2px solid blue;
+  }
+  .btn-clear {
+    width: 65px;
+    height: 35px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+  #default {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .task-value {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0 10px;
+    border: 2px solid blue;
+  }
+  .btn-clear {
+    width: 75px;
+    height: 40px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 0.9rem;
+  }
+  #default {
+    font-size: 1.2rem;
+  }
+}
+
