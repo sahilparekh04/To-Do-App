@@ -1,7 +1,7 @@
 # 📋 Responsive To-Do App
 
-- A simple, responsive To-Do list web app built with vanilla JavaScript, HTML, and CSS.  
-  Features include adding, deleting, marking tasks as complete, clearing all tasks, and persistent storage with localStorage.
+A simple, responsive To-Do list web app built with vanilla JavaScript, HTML, and CSS.  
+Features include adding, deleting, marking tasks as complete, clearing all tasks, and persistent storage with localStorage.
 
 ---
 
