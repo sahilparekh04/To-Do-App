@@ -88,7 +88,7 @@ input:focus {
   border-top: 1px solid rgba(128, 128, 128, 0.76);
   height: 100%;
   width: 80%;
- padding: 30px 0;
+  padding: 30px 0;
   display: flex;
   overflow-y: auto;
 }
@@ -122,6 +122,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .hide {
   display: none;
@@ -220,4 +224,3 @@ li {
     font-size: 1.2rem;
   }
 }
-
