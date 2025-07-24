@@ -8,11 +8,6 @@ let empty = [];
 // if localstorage data is empty so it return undefined or null and checker become empty array so by clicking we push data in it and we store checker in local storage and we rander it data if we refresh than cheker data have value of local storage so it render ls data at that moment bcz we call render data
 let checker = lsData || empty;
 
-window.addEventListener("load", () => {
-  let load = document.querySelector(".load");
-  load.classList.add("hide");
-});
-
 // Rendering Call
 renderData();
 
